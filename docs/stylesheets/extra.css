@@ -1,0 +1,25 @@
+/* PhreakBoutique brand: orange mark, near-black wordmark */
+:root {
+  --pb-orange: #fd5b0b;
+  --pb-ink: #1e1f22;
+  --md-primary-fg-color: var(--pb-ink);
+  --md-primary-fg-color--light: #2c2d31;
+  --md-primary-fg-color--dark: #141517;
+  --md-accent-fg-color: var(--pb-orange);
+  --md-typeset-a-color: #d94a00;
+}
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #17181b;
+  --md-typeset-a-color: #ff7a33;
+}
+
+/* Wordmark: swap for dark mode */
+.pb-wordmark { max-width: 420px; width: 100%; margin: 0.5rem 0 1rem; }
+[data-md-color-scheme="slate"] .pb-wordmark--light,
+[data-md-color-scheme="default"] .pb-wordmark--dark { display: none; }
+
+/* Product cards on the landing page */
+.md-typeset .grid.cards > ul > li:hover { border-color: var(--pb-orange); }
+.md-typeset .grid.cards .lg { color: var(--pb-orange); }
+
+.pb-dc207 { float: right; width: 96px; margin: 0 0 1rem 1rem; }
